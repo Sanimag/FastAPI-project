@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "source-folder"
+version = "0.1.1"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "source_folder"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.86.0"
+uvicorn = "^0.19.0"
+strawberry-graphql = {extras = ["fastapi"], version = "^0.140.3"}
+psycopg2-binary = "^2.9.5"
+graphene = "^3.1.1"
+graphql-core = "^3.2.3"
+alembic = "^1.8.1"
+dotenv = "^0.0.5"
+python-dotenv = "^0.21.0"
+fastapi-sqlalchemy = "^0.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
